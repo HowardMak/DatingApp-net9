@@ -17,7 +17,7 @@ public class UsersController(DataContext context) : ControllerBase
 
         return users;
     }
-
+ 
     [HttpGet("{id:int}")] // /api/users/3
     public async Task<ActionResult<AppUser>> GetUser(int id)
     {
